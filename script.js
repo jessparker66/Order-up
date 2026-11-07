@@ -17,3 +17,7 @@ for (let i = 0; i < prices.length; i++) {
 }
 
 document.querySelector("#total").textContent = "$" + total;
+document.querySelector("#total").textContent = "$" + total.toFixed(2);
+
+const tax = total * 0.08;
+document.querySelector("#total").textContent = "Tax: $" + tax.toFixed(2) + " . Total with tax: $" + (total + tax).toFixed(2);
